@@ -1,4 +1,4 @@
-{% set version = "2.2-7" %}
+{% set version = "2.2-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DEoptim_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DEoptim/DEoptim_{{ version }}.tar.gz
-  sha256: 40ac7e15246f86c6d659ae90c91579a9d96e49558862c70ea43bc3c898ad9478
+  sha256: 631eabdcf26ec25a759651f699db1971beca3ae193c7fbd1c63a78248fdbf54c
 
 build:
   merge_build_host: true  # [win]
